@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+--primary-color: #fc54d7;
+--text-color:rgb(41, 39, 39);
+;
+}
+html{
+    font-size: 10px;
+}
+img{
+    width: 100%;
+}
+body{font-family: Inter,sans-serif;
+background-color: rgb(250, 247, 242);
+color: rgb(59, 30, 30);
+}
+/*estilo comun*/
+a{
+text-decoration: none;
+
+color: black;
+}
+.title{
+    color:var(--primary-color);
+    font-weight:760;
+    font-size: 2rem; 
+    text-transform: uppercase;
+}
+.item_profile{
+    font-size: 1.6rem;
+    color:rgb(12, 6, 6);
+    font-weight: 500;
+}
+.item_title{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 300;
+    margin: 0.8rem 0;
+}
+.item_subtitle{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+/*capas*/
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 1rem;
+    background:   rgb(243, 218, 176);
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+@media only screen and (max-width: 768px){
+.container{
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 3rem;
+    gap: 7rem;
+ }
+} 
+.profile{
+    grid-column: 1/-1;
+    margin-bottom: 2rem;
+    margin-top:  2rem;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+.group-1,.group-2{
+    display:flex;
+    flex-direction: column;
+    gap:4rem;
+}
+.group-3{
+    max-width: 700;
+    width: 100%;
+    margin: 0 auto;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+.group-3 > div{
+    flex: 1;
+    }
+/* profile*/
+.profile_container{
+    display: flex;
+    gap: 2rem;
+}
+.profile_personalImg{
+    max-width: 240px;
+    line-height: 2;
+}
+.profile_name{
+   color:black;
+   font-weight: 400; 
+   font-size: clamp(2rem,8vw,4rem);
+   text-transform:uppercase;
+   display:block;
+}
+.profile_titulo{
+    font-size: 1.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.descripcion_personal{
+    font-size: 1.6rem;
+    line-height: 2;
+}
+@media only screen and (max-width:768px){
+    .profile_container{
+        flex-direction: column;
+    }
+}
+
+/*formacion*/
+.formacion_item{
+    margin-top: 2rem;
+}
+/*Experiencia laboral*/
+.experiencia{
+margin-top:  2rem;
+font-size: 1.6rem;
+line-height: 2;
+}
+.experiencia_name{
+    margin-top:  2rem;
+    font-size: 1.6rem;
+    
+}
+/*Recomendacion laboral*/
+.recomendacion{
+    margin-top:  2rem;
+    font-size: 1.6rem;
+    line-height: 2;
+    }
+    .recomendacion_name{
+        margin-top:  2rem;
+        font-size: 1.6rem;      
+    }
+
+/*certificacion*/
+.certificacion_item{
+    margin-top:  2rem;
+    font-size: 1.6rem;
+    line-height: 2;
+
+}
+/* listas*/
+ul li::marker{
+    font-size: 16px;
+    color: #fc54d7;
+}
+/*conocimiento*/
+.conocimiento_list{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+.habilidades_list{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+.Idiomas_list{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+.intereses_items{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.contacto{
+    margin-top:  1rem;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    line-height: 2;
+}
+/*Boton de descarga*/
+.CVFOTO
+{
+    display: block;
+    text-decoration: underline;
+    font-size: 1.7rem;
+    font-weight:800;
+    margin-top: 1rem;
+}
+.CVFOTO {
+    color: rgb(113, 85, 240);
+}
+.CVPDF
+{
+    display: block;
+    text-decoration: underline;
+    font-size: 1.7rem;
+    font-weight:800;
+    margin-top: 1rem;
+}
+.CVPDF {
+    color:rgb(113, 85, 240);
+}
+
+
+.descarga_item{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+   
+}
